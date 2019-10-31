@@ -5,11 +5,11 @@
 }
 @font-face{
     font-family: 'myfont';
-    src : url('../font/theme2.ttf');
+    src : url('../font/theme2.TTF');
 }
 @font-face{
     font-family: 'myfont2';
-    src : url('../font/theme.TTF');
+    src : url('../font/theme.ttf');
 }
 a {
     text-decoration: none;

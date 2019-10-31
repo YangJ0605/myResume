@@ -16,11 +16,11 @@ a {
 }
 @font-face{
     font-family: 'myfont';
-    src : url('../font/2.ttf');
+    src : url('../font/theme2.TTF');
 }
 @font-face{
     font-family: 'myfont2';
-    src : url('../font/1.ttf');
+    src : url('../font/theme.ttf');
 }
 body {
     background: #ccc;
