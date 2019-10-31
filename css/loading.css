@@ -1,0 +1,79 @@
+body{overflow-x:hidden;}
+
+.loading {
+    display: none;
+}
+#page.pageLoading {
+    display: none;
+}
+
+.loading.active {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   background: url('../imgs/intro-bg.jpg');
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   overflow:hidden;
+   transition: all 1s;
+   animation: load 2s linear 0s infinite;
+   
+   overflow-y:hidden;
+}
+
+.loading.active button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    outline: 0;
+    margin-top: 150px;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.loading.active button:hover {
+    background: #ccc;
+    color: #9acd32;
+    transform:rotateX(30deg);
+}
+@font-face{
+    font-family: 'myhello';
+    src : url('../font/heelo2.otf');
+}
+.loading.active p {
+    font-size: 50px;
+    font-family: myhello;
+    color: #fff;
+    transition: all 1.5s;
+    
+    animation: rotateb 2s linear 0s infinite;
+}
+@keyframes load {
+    0% {
+        transform:scale(1)
+    }
+    50% {
+        transform:scale(1.05)
+    }
+    100% {
+        transform:scale(1)
+    }
+}
+@keyframes rotateb {
+    0% {
+        transform:rotateX(0)
+    }
+    50% {
+        transform:rotateX(45deg)
+    }
+    100% {
+        transform:rotateX(0)
+    }
+}

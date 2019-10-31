@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+    padding: 5px;
+}
+.highlight {
+    color: #FF5700;
+    border-radius: 5px;
+    background: #efefef;
+}
+@font-face{
+    font-family: 'myfont';
+    src : url('../font/2.ttf');
+}
+@font-face{
+    font-family: 'myfont2';
+    src : url('../font/1.ttf');
+}
+body {
+    background: #ccc;
+    font-family: myfont2;
+}
+h4,
+h5,
+h6,
+h1,
+h2,
+h3 {
+    font-family: myfont;
+}
+li {
+    list-style: none;
+}
+.loading {
+    display: none;
+}
+.loading.active {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.loading.active p {
+    font-size: 2em;
+    font-family: myhello;
+    color: #fff;
+}
+#page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    background-color: #fff;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}   
+#page .header {
+    grid-area: header;
+    padding: 30px 0;
+    border-bottom: 5px solid #E4E4E4;
+    background: url('../imgs/header.jpg') no-repeat center;
+    display: grid;  
+    justify-items: center;
+}
+#page .header .resume-link {
+    display: none;
+}
+#page .header h2 {
+    margin: 10px 0 10px;
+    color: #10A7AF;
+   font-size: 35px;
+}
+#page .aside .duiqi {
+    display: inline-block;
+    width: 4em;
+    text-align: justify;
+    vertical-align: top;
+    overflow: hidden;
+    height: 1em;
+    
+}
+#page .aside .duiqi::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#page .header h3 {
+    font-size: 20px;
+    color: #fff;
+}
+
+#page .mainAndAside {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "aside"
+                          "main";
+    padding: 10px 12px;
+}
+
+#page .aside {
+    grid-area: aside;
+    width: 100%;
+}
+aside.aside section {
+    margin:25px 20px;
+}
+
+#page .mainAndAside h2 {
+    margin:20px 0;
+    color: #2397DF;
+}
+aside.aside section ul {
+    padding: 8px;
+}
+aside.aside .phone {
+    display: none;
+}
+aside.aside section ul li{
+    margin: 8px 0;
+}
+aside.aside section ul li .iconfont {
+    vertical-align: middle;
+    font-size: 24px;
+    padding: 0 0.08rem 0.08rem 0;
+}
+#page main.main {
+    grid-area: main;
+    padding: 5px 0;
+    width: 100%;
+}
+#page main.main .item {
+    padding-bottom: 15px;
+}
+#page main.main h3 {
+    padding-bottom: 15px;;
+}
+#page main.main img {
+    width: 100%;
+    height: 100%;
+}
+#page main.main p {
+    padding: 5px 0;
+    font-size: 1em;
+}
+#page .footer {
+    grid-area: footer;
+    height: 44px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+    color: #fff;
+}
