@@ -7,10 +7,6 @@
     font-family: 'myfont';
     src : url('../font/theme2.TTF');
 }
-@font-face{
-    font-family: 'myfont2';
-    src : url('../font/theme.ttf');
-}
 a {
     text-decoration: none;
     color: #888;
@@ -26,7 +22,8 @@ li {
 
 body {
     background: #ccc;
-    font-family: myfont2;
+    font-family: 'NSimSun';
+    line-height: 1.8em;
 }
 h4,
 h5,
@@ -34,11 +31,6 @@ h6,
 h1,
 h2,
 h3 {
-    font-family: myfont;
-}
-
-body {
-    background: #ccc;
     font-family: myfont;
 }
 
@@ -92,10 +84,9 @@ body {
     max-width: 280px;
     border-right: 2px solid #ccc;
     padding-right: 5px;
-    margin: 0 5px;
 }
 aside.aside section {
-    margin:25px 20px;
+    margin:25px 15px;
 }
 aside section:not(:last-of-type) {
     border-bottom: 1.5px solid #ccc;
@@ -120,13 +111,17 @@ aside section:not(:last-of-type) {
     width: 100%;
 }
 aside.aside section ul {
-    padding: 8px;
+    padding: 8px 0;
 }
 aside.aside .phone {
     display: none;
 }
-aside.aside section ul li{
+aside.aside section ul {
     margin: 8px 0;
+    white-space:nowrap;
+}
+aside.aside section ul li.education {
+    white-space:normal;
 }
 aside.aside section ul li .iconfont {
     vertical-align: middle;
@@ -135,7 +130,7 @@ aside.aside section ul li .iconfont {
 }
 #page main.main {
     grid-area: main;
-    padding: 5px 45px;
+    padding: 5px 32px;
     
 }
 #page main.main .item {

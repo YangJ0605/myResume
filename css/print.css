@@ -1,6 +1,9 @@
 body {
     background: transparent;
+    font-family: 'NSimSun';
+    line-height: 1.5em;
 }
+
 
 .layout {
     width: 100vw;
@@ -8,7 +11,7 @@ body {
 
 /* header */
 #page header.header {
-    padding: 23px 0;
+    padding: 26px 0;
 }
 #page header.header .resume-link {
     position: absolute;
@@ -16,8 +19,17 @@ body {
     top: 10px;
     display: block;
 }
+aside.aside section ul {
+    padding-bottom: 15px 0;
+}
+#page .mainAndAside section .more {
+    margin-top:78px;
+}
+aside.aside section ul li{
+    margin: 10px 0;
+}
 aside.aside .phone {
-    display: none;
+    display: block;
 }
 main .item img {
     display: none;

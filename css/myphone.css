@@ -14,18 +14,17 @@ a {
     border-radius: 5px;
     background: #efefef;
 }
+
+body {
+    background: #ccc;
+    font-family: 'NSimSun';
+    line-height: 1.8em;
+}
 @font-face{
     font-family: 'myfont';
     src : url('../font/theme2.TTF');
 }
-@font-face{
-    font-family: 'myfont2';
-    src : url('../font/theme.ttf');
-}
-body {
-    background: #ccc;
-    font-family: myfont2;
-}
+
 h4,
 h5,
 h6,
@@ -112,12 +111,10 @@ li {
     grid-area: aside;
     width: 100%;
 }
-aside.aside section {
-    margin:25px 20px;
-}
+
 
 #page .mainAndAside h2 {
-    margin:20px 0;
+    margin:16px 0;
     color: #2397DF;
 }
 aside.aside section ul {
@@ -143,7 +140,8 @@ aside.aside section ul li .iconfont {
     padding-bottom: 15px;
 }
 #page main.main h3 {
-    padding-bottom: 15px;;
+    padding-bottom: 15px;
+
 }
 #page main.main img {
     width: 100%;
