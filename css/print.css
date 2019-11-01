@@ -1,7 +1,7 @@
 body {
     background: transparent;
     font-family: 'NSimSun';
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 
@@ -12,7 +12,10 @@ body {
 /* header */
 #page header.header {
     padding: 26px 0;
+    color: #2397DF;
 }
+
+
 #page header.header .resume-link {
     position: absolute;
     left: 10px;
@@ -22,12 +25,8 @@ body {
 aside.aside section ul {
     padding-bottom: 15px 0;
 }
-#page .mainAndAside section .more {
-    margin-top:78px;
-}
-aside.aside section ul li{
-    margin: 10px 0;
-}
+
+
 aside.aside .phone {
     display: block;
 }
