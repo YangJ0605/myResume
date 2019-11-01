@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face{
-    font-family: 'myfont';
-    src : url('../font/theme2.TTF');
-}
+
 a {
     text-decoration: none;
     color: #888;
@@ -31,7 +28,7 @@ h6,
 h1,
 h2,
 h3 {
-    font-family: myfont;
+    font-family: 'KaiTi';
 }
 
 #page {

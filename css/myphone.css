@@ -20,10 +20,7 @@ body {
     font-family: 'NSimSun';
     line-height: 1.8em;
 }
-@font-face{
-    font-family: 'myfont';
-    src : url('../font/theme2.TTF');
-}
+
 
 h4,
 h5,
@@ -31,7 +28,7 @@ h6,
 h1,
 h2,
 h3 {
-    font-family: myfont;
+    font-family: 'KaiTi';
 }
 li {
     list-style: none;
